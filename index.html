@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гра та Статистика</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/BrightTheme.css" rel="stylesheet">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .game-container {
+      margin-bottom: 50px;
+    }
+    #key {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2196f3;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    #sales-chart {
+      max-width: 800px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h2>Гра: Натисни правильну клавішу</h2>
+    <p>Натисніть клавішу: <span id="key"></span></p>
+    <button id="new-game">Нова гра</button>
+  </div>
+
+  <div class="chart-container">
+    <h2>Статистика продажів за останній місяць</h2>
+    <canvas id="sales-chart"></canvas>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
