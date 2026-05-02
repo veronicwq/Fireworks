@@ -1,7 +1,5 @@
 import * as PNotify from "https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.js";
 
-const { alert } = PNotify;
-
 const keys = ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";"];
 let currentKeyIndex = 0;
 
